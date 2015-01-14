@@ -10,7 +10,7 @@
 angular.module('angularLeafletApp', [
   'leaflet-directive'
 ])
-.controller('MainCtrl', ['$scope', 'earthquakeService', function ($scope, earthquakeService) {
+.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
   angular.extend($scope, {
     pacificRim: {
       lat: 18.0,
@@ -19,9 +19,10 @@ angular.module('angularLeafletApp', [
     }
   });
 
-  $scope.earthquakes = function () {
-    earthquakeService.getData();
-  };
+  var url = 'http://www.seismi.org/api/eqs/';
+  $http.jsonp(url + '?callback=JSON_CALLBACK')
+    .success(function (data) {
+      $scope.earthquakes = data;
+    });
 
-  console.log($scope.earthquakes());
 }]);
