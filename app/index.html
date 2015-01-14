@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" ng-app="angularLeafletApp">
   <head>
     <meta charset="utf-8">
 
@@ -21,7 +21,7 @@
     <!-- endbuild -->
   </head>
 
-  <body ng-app="angularLeafletApp">
+  <body ng-controller="MainCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
         <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
@@ -30,7 +30,7 @@
 
     <!-- Add your site or application content here -->
     <div class="container-fluid">
-      <leaflet cneter="center"></leaflet>
+      <leaflet center="pacificRim"></leaflet>
     </div>
 
 

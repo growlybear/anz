@@ -7,13 +7,15 @@
  * # MainCtrl
  * Controller of the angularLeafletApp
  */
-angular.module('angularLeafletApp', ['leaflet-directive'])
-  .controller('MainCtrl', function ($scope) {
-    angular.extend($scope, {
-      center: {
-        lat: 35.460669951495305,
-        lng: 101.77734374999999,
-        zoom: 3
-      }
-    });
+angular.module('angularLeafletApp', [
+  'leaflet-directive'
+])
+.controller('MainCtrl', ['$scope', function ($scope) {
+  angular.extend($scope, {
+    pacificRim: {
+      lat: 18.0,
+      lng: 200.0,
+      zoom: 3
+    }
   });
+}]);
