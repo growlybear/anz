@@ -7,11 +7,13 @@
  * # MainCtrl
  * Controller of the angularLeafletApp
  */
-angular.module('angularLeafletApp')
+angular.module('angularLeafletApp', ['leaflet-directive'])
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    angular.extend($scope, {
+      center: {
+        lat: 35.460669951495305,
+        lng: 101.77734374999999,
+        zoom: 3
+      }
+    });
   });

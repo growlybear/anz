@@ -11,9 +11,17 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 /* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+html, body {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+  padding: 0;
+}
+
+.angular-leaflet-map {
+  height: 100%;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
