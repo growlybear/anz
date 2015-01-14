@@ -10,7 +10,7 @@
 angular.module('angularLeafletApp', [
   'leaflet-directive'
 ])
-.controller('MainCtrl', ['$scope', function ($scope) {
+.controller('MainCtrl', ['$scope', 'earthquakeService', function ($scope, earthquakeService) {
   angular.extend($scope, {
     pacificRim: {
       lat: 18.0,
@@ -18,4 +18,10 @@ angular.module('angularLeafletApp', [
       zoom: 3
     }
   });
+
+  $scope.earthquakes = function () {
+    earthquakeService.getData();
+  };
+
+  console.log($scope.earthquakes());
 }]);
