@@ -15,6 +15,11 @@ html, body {
   height: 100%;
 }
 
+/* Reserve space for fixed navbar */
+body {
+  padding-top: 50px;
+}
+
 .container-fluid {
   height: 100%;
   padding: 0;
@@ -23,6 +28,16 @@ html, body {
 .angular-leaflet-map {
   height: 100%;
 }
+
+/* Fix margins on the header */
+.navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
+}
+
+.navbar-right {
+  margin-right: 0;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
