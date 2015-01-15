@@ -37,7 +37,7 @@ angular.module('angularLeafletApp', [
         temp[datum.eqid] = {
           lat: parseFloat(datum.lat, 10),
           lng: parseFloat(datum.lon, 10),
-          message: 'Region: ' + datum.region + ', Magnitude: ' + datum.magnitude,
+          message: 'Region: ' + datum.region + '<br/>Magnitude: ' + datum.magnitude,
           focus: false,
           draggable: false
         };
