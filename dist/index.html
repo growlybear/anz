@@ -1,0 +1,13 @@
+<!doctype html> <html lang="en" class="no-js" ng-app="angularLeafletApp"> <head> <meta charset="utf-8"> <title>Earthquake map</title> <meta name="description" content="Sample angular/leaflet application mapping earthquake data from seismi.org"> <meta name="author" content="Michael Allan"> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.6f185848.css"> <link rel="stylesheet" href="styles/main.e64c8cd5.css">  <body ng-controller="MainCtrl"> <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]--> <nav class="navbar navbar-default navbar-fixed-top"> <div class="container-fluid"> <!-- Brand and toggle grouped for better mobile display --> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Earthquakes Everywhere &hellip;</a> </div> <!-- Collect the nav links, forms, and other content for toggling --> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <form class="navbar-form navbar-right" role="search"> <div class="form-group">Filter by: <input type="text" class="form-control" placeholder="Location name"> </div> </form> </div> </div> </nav> <!-- Add your site or application content here --> <div class="container-fluid"> <leaflet center="hyderabad" markers="markers"></leaflet> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');</script> <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.76f279db.js"></script>
+    <![endif]--> <script src="scripts/vendor.8fbe6f9e.js"></script> <script src="scripts/scripts.f5c8ca55.js"></script>  
