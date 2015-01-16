@@ -100,11 +100,11 @@ assistance.
 
 A small app such as this didn't call for many Design Patterns to be leveraged in its development.
 However, I should point out that interaction with the Seismi API has been extracted out into its own
-separate service, ensuring both components adhere closely to the [Single-Responsibility Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle.
-This ensures not just a clean separation of concerns, but easy testing in isolation from each other.
+separate service, ensuring both components adhere closely to the [Single-Responsibility Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle).
+This ensures not just a clean separation of concerns, but easy testing of each unit in isolation
+from each other.
 
-Many other best practices for front-end development are exhibited throughout the repo, especially
-as regards:
+Many other best practices for front-end development are exhibited throughout the repo, specifically:
 
 - code, asset and request minification
 - streamlined development workflow
